@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  @apply flex items-center flex-col p-3 overflow-y-auto h-full;
+}
