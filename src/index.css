@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .page {
-  @apply flex items-center flex-col p-3 overflow-y-auto h-full;
+  @apply flex flex-col p-3 overflow-y-auto h-full;
+}
+
+.primary-btn {
+  @apply bg-blue-500 px-3 rounded-sm text-white font-semibold hover:bg-blue-600;
 }

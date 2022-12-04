@@ -16,7 +16,10 @@ export default function App() {
       <Routes>
         <Route index element={<Home products={products} />} />
         <Route path='cart' element={<Cart />} />
-        <Route path='/product/:slug' element={<ProductScreen />} />
+        <Route
+          path='/product/:slug'
+          element={<ProductScreen products={products} />}
+        />
         <Route path='*' element={<NoPage />} />
       </Routes>
 
