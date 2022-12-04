@@ -2,7 +2,10 @@ import { Link } from 'react-router-dom'
 
 const ProductCard = ({ product }) => {
   return (
-    <article key={product.slug} className='border-4 border-blue-200 rounded'>
+    <article
+      key={product.slug}
+      className='border border-blue-200 shadow rounded'
+    >
       <Link to={`product/${product.slug}`}>
         <img src={product.image} alt={product.name} className='md:w-64' />
       </Link>

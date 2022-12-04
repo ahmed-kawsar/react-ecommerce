@@ -27,7 +27,9 @@ const ProductScreen = ({ products }) => {
             <p>
               Price: <strong>${product.price}</strong>
             </p>
-            <p>Status{product.countInStock < 1 ? 'Out Of Stock' : 'InStock'}</p>
+            <p>
+              Status: {product.countInStock < 1 ? 'Out Of Stock' : 'InStock'}
+            </p>
           </div>
           <button className='primary-btn w-32'>Add to Cart</button>
         </div>
